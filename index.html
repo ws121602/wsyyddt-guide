@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -7,19 +8,21 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
+      background: url('https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #222;
+      background-color: rgba(0, 0, 0, 0.7);
       color: white;
       padding: 1em;
       text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
     nav {
-      background-color: #444;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 0.5em;
       text-align: center;
     }
@@ -29,19 +32,30 @@
       text-decoration: none;
     }
     section {
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 2em;
       max-width: 800px;
-      margin: auto;
+      margin: 2em auto;
+      border-radius: 10px;
+      animation: slideIn 1s ease-in-out;
     }
     h2 {
-      color: #007acc;
+      color: #00c3ff;
     }
     footer {
-      background-color: #222;
+      background-color: rgba(0, 0, 0, 0.7);
       color: white;
       text-align: center;
       padding: 1em;
       margin-top: 2em;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
@@ -84,6 +98,7 @@
 
   <footer>
     <p>© 2025 YYDDT 官方指南 | 本站由玩家社群维护</p>
+    <p>联系 QQ：12345678 | 微信：YYDDT_官方 | Discord：discord.gg/yyddt</p>
   </footer>
 </body>
 </html>
